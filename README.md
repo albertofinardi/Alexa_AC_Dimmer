@@ -5,6 +5,8 @@ A project based on a NodeMCU (ESP8266) board to create a physically and Alexa co
 ## Part List
 - NodeMCU (ESP8266) board;
 - Arduino AC Dimmer;
+- Jumper wire;
+- Switch;
 
 ## Code
 ### Software
