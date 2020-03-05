@@ -1,2 +1,22 @@
 # Alexa-AC-Dimmer
-A project based on a NodeMCU (ESP8266 or ESP32) board to create a physically and Alexa controllable AC Dimmer Switch
+A project based on a NodeMCU (ESP8266) board to create a physically and Alexa controllable AC Dimmer Switch
+
+### Part List
+- NodeMCU (ESP8266) board;
+- Arduino AC Dimmer;
+
+###Connections
+
+###Code
+- ####Software
+To code this project you need to install [Arduino IDE](https://www.arduino.cc/en/main/OldSoftwareReleases "Arduino IDE"), adding the ESP8266 board library following these steps:
+	1. Go to files and click on the preference in the Arduino IDE;
+	1. Copy the below code in the Additional boards Manager:
+		http://arduino.esp8266.com/stable/package_esp8266com_index.json
+	1. Click OK to close the preference Tab;
+	1. Go to Tools and board, and then select board Manager;
+	1. Navigate to esp8266 by esp8266 community and install the software for Arduino. **INSTALL 2.5.0 VERSION**.
+- ####Libraries
+In order to make this proget you need to install the following libraries:
+	1. [RDBDimmer](https://github.com/RobotDynOfficial/RBDDimmer "RDBDimmer");
+	1. [Sinric Pro](https://github.com/sinricpro/esp8266-esp32-sdk "Sinric Pro");
