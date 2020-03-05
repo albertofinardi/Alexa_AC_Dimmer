@@ -6,7 +6,7 @@ A project based on a NodeMCU (ESP8266) board to create a physically and Alexa co
 - NodeMCU (ESP8266) board;
 - Arduino AC Dimmer;
 - Jumper wire;
-- Switch;
+- Swich;
 
 ## Code
 ### Software
@@ -25,3 +25,9 @@ In order to make this project you need to install the following libraries:
 
 ## Make your account
 Make an account on [Sinric Pro](https://sinric.pro "Sinric Pro") and install [Sinric Pro Skill](https://www.amazon.com/HOME-Sinric-Pro/dp/B07ZT5VDT8 "Sinric Pro Skill") on your Alexa . Once you've done that, login in your account and, from the website, add a new "Light with dimmer" device. 
+
+## Ready
+You're ready to modify the code with your:
+- WiFi SSID and password; 
+- App Key and App Secret (you can find them in your account data on [Sinric Pro](https://sinric.pro "Sinric Pro");
+- Device ID (you can find it in your devices menu on [Sinric Pro](https://sinric.pro "Sinric Pro");
