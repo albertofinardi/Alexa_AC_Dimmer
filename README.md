@@ -33,7 +33,7 @@ Make an account on [Sinric Pro](https://sinric.pro "Sinric Pro") and install [Si
 ## Ready
 You're ready to modify the code with your:
 - WiFi SSID and password; 
-- App Key and App Secret (you can find them in your account data on [Sinric Pro](https://sinric.pro "Sinric Pro");
-- Device ID (you can find it in your devices menu on [Sinric Pro](https://sinric.pro "Sinric Pro");
+- App Key and App Secret (you can find them in your account data on [Sinric Pro](https://sinric.pro "Sinric Pro"));
+- Device ID (you can find it in your devices menu on [Sinric Pro](https://sinric.pro "Sinric Pro"));
 
 and upload it on your board.
