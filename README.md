@@ -10,7 +10,7 @@ A project based on a NodeMCU (ESP8266) board to create a physically and Alexa co
 ### Code
 - #### Software
 To code this project you need to install [Arduino IDE](https://www.arduino.cc/en/main/OldSoftwareReleases "Arduino IDE"), adding the ESP8266 board library following these steps:
-	1. Go to files and click on the preference in the Arduino IDE;
+	1. Go to files and click on the preference in the Arduino IDE;\n
 	2. Copy the below code in the Additional boards Manager:
 		http://arduino.esp8266.com/stable/package_esp8266com_index.json;
 	3. Click OK to close the preference Tab;
