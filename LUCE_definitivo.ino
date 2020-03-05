@@ -46,11 +46,11 @@ bool connectionLost = false;
 
 dimmerLamp dimmer(outputPin, zerocross); 
 
-#define WIFI_SSID         "Vodafone-34119905"    
-#define WIFI_PASS         "xdkbz5pjbm747w4"
-#define APP_KEY           "5a1d7e94-c5eb-448e-bb24-ff191f171e66"                                        // Should look like "de0bxxxx-1x3x-4x3x-ax2x-5dabxxxxxxxx"
-#define APP_SECRET        "07cc83d4-89f2-4c90-a30d-a8171453ce75-d08a07a2-4246-4a11-9555-bfd92e5c5e04"   // Should look like "5f36xxxx-x3x7-4x3x-xexe-e86724a9xxxx-4c4axxxx-3x3x-x5xe-x9x3-333d65xxxxxx"
-#define DIMSWITCH_ID      "5e5d0bab13b0d2499e309c57"    // Should look like "5dc1564130xxxxxxxxxxxxxx"
+#define WIFI_SSID         ""    
+#define WIFI_PASS         ""
+#define APP_KEY           "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"                                        // Should look like "de0bxxxx-1x3x-4x3x-ax2x-5dabxxxxxxxx"
+#define APP_SECRET        "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"   // Should look like "5f36xxxx-x3x7-4x3x-xexe-e86724a9xxxx-4c4axxxx-3x3x-x5xe-x9x3-333d65xxxxxx"
+#define DIMSWITCH_ID      "xxxxxxxxxxxxxxxxxxxxxxxx"    // Should look like "5dc1564130xxxxxxxxxxxxxx"
 #define BAUD_RATE         9600                // Change baudrate to your need
 
 // we use a struct to store all states and values for our dimmable switch
