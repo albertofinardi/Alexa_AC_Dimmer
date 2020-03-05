@@ -4,12 +4,12 @@
 #include <ESP8266WiFi.h>
 #include <Arduino.h>
 
-//YOUR INFO
-#define WIFI_SSID         "Vodafone-34119905"    
-#define WIFI_PASS         "xdkbz5pjbm747w4"
-#define APP_KEY           "5a1d7e94-c5eb-448e-bb24-ff191f171e66"//"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
-#define APP_SECRET        "07cc83d4-89f2-4c90-a30d-a8171453ce75-d08a07a2-4246-4a11-9555-bfd92e5c5e04"//"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
-#define DIMSWITCH_ID      "5e5d0bab13b0d2499e309c57"//"xxxxxxxxxxxxxxxxxxxxxxxx"
+//YOUR INFO (TO CHANGE)
+#define WIFI_SSID         ""                                      //put your wifi SSID here
+#define WIFI_PASS         ""                                      //put your wifi possword here
+#define APP_KEY           "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"  //put your app key here
+#define APP_SECRET        "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" //put your app secret here
+#define DIMSWITCH_ID      "xxxxxxxxxxxxxxxxxxxxxxxx"              //put your device id here
 #define BAUD_RATE         9600
 
 //PINS
@@ -32,6 +32,7 @@ struct {
   int powerLevel = 0;
 } device_state;
 
+//"Alexa, turn on/off ..."
 bool onPowerState(const String &deviceId, bool &state) {
   Serial.printf("Device power turned %s (WebRequest)\r\n", state?"on":"off");
   device_state.powerState = state;
@@ -48,6 +49,7 @@ bool onPowerState(const String &deviceId, bool &state) {
   return true;
 }
 
+//"Alexa, set ... brightness to 25%"
 bool onPowerLevel(const String &deviceId, int &powerLevel) {
   //int pre = device_state.powerLevel;
   device_state.powerLevel = powerLevel;
@@ -57,6 +59,7 @@ bool onPowerLevel(const String &deviceId, int &powerLevel) {
   return true;
 }
 
+//"Alexa, dimmer ... "
 bool onAdjustPowerLevel(const String &deviceId, int levelDelta) {
   if((device_state.powerLevel + levelDelta)<100){
     if((device_state.powerLevel + levelDelta)>1){
@@ -155,45 +158,3 @@ void button()
  }
     lastButtonState = buttonState;  
 }
-
-/*
-unsigned long previousTime =  0;
-#define millis_timer          50
-void dimmering(int preValue, int newValue)                                                                            //dimmering
-{
-  //async delay
-
-  unsigned long currentTime = millis();
-  
-  if (preValue < newValue){
-    while(preValue < newValue){
-      if(newValue <= 100){
-        if (currentTime - previousTime >= millis_timer) {
-            preValue++;
-            Serial.printf("\n\tCurrent dimmer %d", preValue);
-            dimmer.setPower(preValue);
-            previousTime = currentTime;
-            yield();
-        }
-      }else{
-        return;
-      }
-    }
-  }
-  else if (preValue > newValue){
-    while(preValue > newValue){
-      if(newValue >= 0){
-        if (currentTime - previousTime >= millis_timer) {
-            preValue--;
-            Serial.printf("\n\tCurrent dimmer %d", preValue);
-            dimmer.setPower(preValue);
-            previousTime = currentTime;
-            yield();
-        }
-      }else{
-        return;
-      }
-    }
-  }
-}
-*/
