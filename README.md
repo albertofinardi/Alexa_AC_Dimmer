@@ -17,6 +17,6 @@ To code this project you need to install [Arduino IDE](https://www.arduino.cc/en
 - Navigate to esp8266 by esp8266 community and install the software for Arduino. **INSTALL 2.5.0 VERSION**.
     
 ### Libraries
-In order to make this proget you need to install the following libraries:
+In order to make this project you need to install the following libraries:
 - [RDBDimmer](https://github.com/RobotDynOfficial/RBDDimmer "RDBDimmer");
 - [Sinric Pro](https://github.com/sinricpro/esp8266-esp32-sdk "Sinric Pro");
