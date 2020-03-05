@@ -6,7 +6,11 @@ A project based on a NodeMCU (ESP8266) board to create a physically and Alexa co
 - NodeMCU (ESP8266) board;
 - [Arduino AC Dimmer](https://www.amazon.com/RobotDyn-controller-control-Arduino-Raspberry/dp/B072K9P7KH/ref=sr_1_2?keywords=arduino+ac+dimmer&qid=1583418112&sr=8-2 "Arduino AC Dimmer");
 - Jumper wire;
-- Swich;
+- Switch;
+
+## Wiring
+- Connect Arduino AC Dimmer PWM to D6 and Z-C to D2;
+- Connect one side of the switch to Ground and the other one to D1;
 
 ## Code
 ### Software
