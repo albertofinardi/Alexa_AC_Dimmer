@@ -9,7 +9,7 @@ A project based on a NodeMCU (ESP8266) board to create a physically and with Ale
 - Switch;
 
 ## Wiring
-- Connect Arduino AC Dimmer PWM to D6 and Z-C to D5;
+- Connect Arduino AC Dimmer PWM to D5 and Z-C to D6;
 - Connect one side of the switch to Ground and the other one to D1;
 
 ## Code
