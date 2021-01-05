@@ -9,7 +9,7 @@ A project based on a NodeMCU (ESP8266) board to create a physically and with Ale
 - Switch;
 
 ## Wiring
-- Connect Arduino AC Dimmer PWM to D6 and Z-C to D2;
+- Connect Arduino AC Dimmer PWM to D6 and Z-C to D5;
 - Connect one side of the switch to Ground and the other one to D1;
 
 ## Code
@@ -28,7 +28,7 @@ In order to make this project you need to install the following libraries:
 - [Sinric Pro](https://github.com/sinricpro/esp8266-esp32-sdk#arduinoide "Sinric Pro");
 
 ## Make your account
-Make an account on [Sinric Pro](https://sinric.pro "Sinric Pro") and install [Sinric Pro Skill](https://www.amazon.com/HOME-Sinric-Pro/dp/B07ZT5VDT8 "Sinric Pro Skill") on your Alexa . Once you've done that, login in your Sinric account and, from the website, add a new "Light with dimmer" device. 
+Make an account on [Sinric Pro](https://sinric.pro "Sinric Pro") and install [Sinric Pro Skill](https://www.amazon.com/HOME-Sinric-Pro/dp/B07ZT5VDT8 "Sinric Pro Skill") on your Alexa. Once you've done that, login in your Sinric account and, from the website, add a new "Light with dimmer" device. 
 
 ## Ready
 You're ready to modify the code with your:
