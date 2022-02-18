@@ -1,5 +1,7 @@
 # Alexa AC Dimmer
 
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-no-red.svg)](https://bitbucket.org/lbesson/ansi-colors)
+
 A project based on a NodeMCU (ESP8266) board to create a physically and with Alexa controllable AC Dimmer Switch
 
 ## Part List
